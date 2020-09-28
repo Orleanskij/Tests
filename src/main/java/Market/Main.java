@@ -20,17 +20,16 @@ public class Main {
 
         Shelve cakes =new Shelve();
         cakes.products= Arrays.asList(baker,baker1);
-        cakes.shelveKaloriy=Arrays.asList(baker,baker1);
+
         //cakes.polka=Arrays.asList(baker,baker1);
         //System.out.println(cakes.count());
 
         Shelve cakes2 =new Shelve();
         cakes2.products= Arrays.asList(baker2,baker3);
-        cakes2.shelveKaloriy=Arrays.asList(baker2,baker3);
+
 
         Section bulki = new Section();
         bulki.shelves = Arrays.asList(cakes,cakes2);
-        bulki.sectionKal = Arrays.asList(cakes,cakes2);
-        System.out.println("AllCost: "+ bulki.calculateTotalPrice() + "  AllCallories: "+bulki.calculateTotalKal());
+        System.out.println("AllCost: "+ bulki.calculate() + "  AllCallories: "+bulki.calculate2());
     }
 }

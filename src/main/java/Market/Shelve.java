@@ -4,10 +4,10 @@ import java.util.List;
 
 import static jdk.nashorn.internal.objects.ArrayBufferView.length;
 
-public class Shelve{
+public class Shelve implements  calcPrice{
 
     public List<Product> products;
-    public List<Product> shelveKaloriy;
+    //public List<Product> shelveKaloriy;
    // public List<Product> polka;
 
 //public int count(){
@@ -16,7 +16,7 @@ public class Shelve{
 //}
 
 
-    public int calculateShelve(){
+    public int calculate(){
 int prices=0;
 for (Product product: products){
     int price= product.calculatePrice();
@@ -25,9 +25,9 @@ for (Product product: products){
         return prices;
     }
 
-    public int calculateJir(){
+    public int calculate2(){
         int jir=0;
-        for (Product kalorii: shelveKaloriy){
+        for (Product kalorii: products){
             int jirok= kalorii.calculateKall();
             jir +=jirok;
         }

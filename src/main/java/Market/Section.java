@@ -2,26 +2,26 @@ package Market;
 
 import java.util.List;
 
-public class Section {
+public class Section implements calcPrice{
 
     public List<Shelve> shelves;
-    public List<Shelve> sectionKal;
 
 
-    public int calculateTotalPrice(){
+
+    public int calculate(){
         int shelve=0;
         for (Shelve shelves: shelves){
-            int prices= shelves.calculateShelve();
+            int prices= shelves.calculate();
             shelve = shelve+ prices;
         }
         return shelve;
 
     }
 
-    public int calculateTotalKal(){
+    public int calculate2(){
         int jir=0;
-        for (Shelve kallor: sectionKal){
-            int jirok= kallor.calculateJir();
+        for (Shelve kallor: shelves){
+            int jirok= kallor.calculate2();
             jir = jir+ jirok;
         }
         return jir;
