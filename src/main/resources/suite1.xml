@@ -1,0 +1,43 @@
+<?xml version ="1.0" encoding ="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Petr">
+    <test name="Suite1">
+        <classes>
+            <class name="petr.tests.Class1Suite1">
+
+                <methods>
+
+                    <include name="test1">
+                        <parameter name="x" value="2"></parameter>
+                        <parameter name="y" value="2"></parameter>
+                    </include>
+
+                    <include name="test2">
+                        <parameter name="x" value="1"></parameter>
+                        <parameter name="y" value="2"></parameter>
+                    </include>
+                </methods>
+            </class>
+            <class name="petr.tests.Class2Suite1">
+                <methods>
+
+                    <include name="test1">
+                        <parameter name="x" value="test"></parameter>
+                        <parameter name="y" value="test"></parameter>
+                    </include>
+
+                    <include name="test2">
+                        <parameter name="x" value="test"></parameter>
+                        <parameter name="y" value="test2"></parameter>
+                    </include>
+                </methods>
+            </class>
+            <class name="petr.tests.Names">
+                <methods>
+                    <include name="massive"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
