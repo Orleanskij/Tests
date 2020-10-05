@@ -3,7 +3,7 @@
 <suite name="Petr">
     <test name="mail">
         <classes>
-            <class name="Email.MainPageEmail">
+            <class name="Email.Tests">
             </class>
         </classes>
     </test>
